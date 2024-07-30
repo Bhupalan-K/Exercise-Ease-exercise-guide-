@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import Exercises from '../../components/exercises/Exercises'
-import Banner from '../../components/banner/Banner'
-import SearchBar from '../../components/searchBar/SearchBar'
+import React, { useEffect, useState, useCallback } from 'react';
+import Exercises from '../../components/exercises/Exercises';
+import Banner from '../../components/banner/Banner';
+import SearchBar from '../../components/searchBar/SearchBar';
 
 const Home = ({ setExercise }) => {
+  const [bodyPart, setBodyPart] = useState('all');
+  const [exercises, setExercisesState] = useState([]);
 
-  const [bodyPart, setBodyPart] = useState('all')
-  const [exercises, setExercises] = useState([])
+  const setExercises = useCallback((exercises) => {
+    setExercisesState(exercises);
+  }, []);
 
   useEffect(() => {
-    setExercise(exercises)
-  }, [exercises, setExercise])
+    setExercise(exercises);
+  }, [exercises, setExercise]);
 
   return (
     <div className='home'>
@@ -26,7 +29,7 @@ const Home = ({ setExercise }) => {
         exercises={exercises}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

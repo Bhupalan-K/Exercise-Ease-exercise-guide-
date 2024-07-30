@@ -12,10 +12,10 @@ const Footer = () => {
         <p><i class="fa-solid fa-phone"></i> 6379948255</p>
       </div>
       <div className="icons">
-        <a href="https://linkedin.com/in/bhupalan-k-487695247" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Bhupalan-K" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:bhupalan1711@gmail.com" target="blank"><i class="fa-regular fa-envelope"></i></a>
-        <a href="https://wa.me/7373562627" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/in/bhupalan-k-487695247" ><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Bhupalan-K" ><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:bhupalan1711@gmail.com" ><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://wa.me/7373562627" ><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <div className='copyright'>
         <p>Copyright &copy; {year.getFullYear()}, All Right Reserved.</p>

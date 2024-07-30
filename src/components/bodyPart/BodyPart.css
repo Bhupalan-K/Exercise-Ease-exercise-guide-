@@ -1,0 +1,19 @@
+.bodypart {
+    width: 200px;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.bodypart a {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.bodypart p {
+    padding: 0;
+    font-size: 15px;
+    margin: 0;
+}

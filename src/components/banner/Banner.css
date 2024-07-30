@@ -1,0 +1,81 @@
+.banner {
+    padding: 0 20px;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.banner .front {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .front .headings {
+    width: 50%;
+    text-align: center;
+}
+
+.banner .front img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.banner p {
+    text-align: center;
+
+}
+
+.banner .front .headings h3 {
+    margin-top: 20px;
+}
+
+.banner .front .headings .club,
+.quote {
+    font-size: 35px;
+}
+
+.banner .front .headings .quote {
+    font-style: italic;
+}
+
+.banner .front .headings p {
+    width: 90%;
+    font-size: 23px;
+    margin: 30px 0 30px 15px;
+    padding: 10px 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media(max-width: 635px) {
+
+    .banner .front {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner .front .headings {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .front img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .banner .front .headings p {
+        text-align: center;
+
+    }
+}

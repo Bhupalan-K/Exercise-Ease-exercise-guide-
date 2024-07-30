@@ -1,0 +1,64 @@
+.search {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search p {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search .input-div {
+    margin: 5px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.search .input-div .items {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: 1px solid white;
+}
+
+.search .input-div input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.search .input-div button {
+    max-width: 10%;
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search .hzscrollbar {
+    margin: 30px 0;
+}
+
+@media(max-width: 616px) {
+    .search .input-div button {
+        font-size: 10px;
+        max-width: 20%;
+    }
+
+    .search .input-div input {
+        width: 70%;
+    }
+}

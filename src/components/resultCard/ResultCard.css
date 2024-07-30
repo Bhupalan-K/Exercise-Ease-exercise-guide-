@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 380px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+
+.card .card-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 770px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+        height: 280px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 7px;
+    }
+}

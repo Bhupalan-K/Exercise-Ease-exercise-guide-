@@ -1,0 +1,57 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+  text-align: center;
+}
+
+.scroll .scroll-div {
+  display: flex;
+  overflow: auto;
+}
+
+.resultcard {
+  margin-top: 10px;
+
+}
+
+.resultcard h2 {
+  margin: 10px auto;
+}
+
+.cards {
+  display: flex;
+  overflow: auto;
+}
+
+.scroll .scroll-div::-webkit-scrollbar {
+  height: 2px;
+  background: white;
+}
+
+.scroll .scroll-div::-webkit-scrollbar-thumb {
+  background: black;
+  transition: smooth;
+}
+
+.scroll .scroll-div::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scroll .items {
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+
+}
+
+.scroll .arrow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.details-card {
+  display: flex;
+  margin-right: 10px;
+}

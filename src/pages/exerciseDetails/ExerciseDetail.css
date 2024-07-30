@@ -1,0 +1,115 @@
+.exercise-detail {
+    padding: 0 20px;
+
+}
+
+.exercise-detail .details-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+
+}
+
+.exercise-detail .details-div img {
+    height: 500px;
+    width: 40%;
+    border-radius: 7px;
+}
+
+.exercise-detail .details-div .detail {
+    width: 50%;
+}
+
+.exercise-detail .details-div h2 {
+    margin: 15px 0;
+}
+
+.exercise-detail .details-div p {
+    word-spacing: 7px;
+    line-height: 22px;
+}
+
+.exercise-detail .details-div .detail .extras {
+    display: flex;
+    margin-top: 25px;
+}
+
+.exercise-detail .details-div .detail .extras img {
+    width: 36px;
+    height: 36px;
+    margin-right: 25px;
+}
+
+
+.exercise-detail .video-div {
+    margin: 60px 0 0;
+    width: 100%;
+}
+
+.exercise-detail .video-div .video-name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.exercise-detail .video-div .video-name h2 {
+    margin: 20px 40px;
+}
+
+.exercise-detail .video-div .video-name .videos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 2em;
+    margin: auto 0;
+    justify-content: space-around;
+}
+
+.exercise-detail .video-div .video-name .videos .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+.exercise-detail .video-div .video-name .videos img {
+    height: auto;
+    width: 100%;
+
+}
+
+.exercise-detail .video-div .video-name .videos img p {
+    text-wrap: wrap;
+    text-align: justify;
+}
+
+.exercise-detail .video-div .video-name .videos img {
+    border-radius: 6px;
+}
+
+.exercise-detail .similar-exercises {
+    margin-top: 50px;
+}
+
+.exercise-detail .similar-exercises h2 {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 770px) {
+    .exercise-detail .details-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exercise-detail .details-div img {
+        height: 450px;
+        width: 80%;
+        border-radius: 7px;
+    }
+
+    .exercise-detail .details-div .detail {
+        width: 70%;
+    }
+}

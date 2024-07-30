@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import './ExerciseDetail.css'
 import { useParams } from 'react-router-dom'
 import { apiOptions, fetchData, youtubeOptions } from '../../api/fetchData';
@@ -18,7 +18,7 @@ const ExerciseDetail = () => {
     const [equipmentExercise, setEquipmentExercise] = useState([])
 
 
-    const fetchExerciseDetail = async () => {
+    const fetchExerciseDetail = useCallback(async () => {
         const exerciseDetail = await fetchData(`${API_ONE}/exercises/exercise/${id}`, apiOptions);
         setIdDetails(exerciseDetail);
 
@@ -26,19 +26,18 @@ const ExerciseDetail = () => {
             `${API_TWO}/search?query=${exerciseDetail.name}`, youtubeOptions)
         setVideoDetails(videoDetail.contents)
 
-
         const targetExerciseData = await fetchData(`${API_ONE}/exercises/target/${exerciseDetail.target}`, apiOptions)
         setTargetExercise(targetExerciseData)
 
         const equipmentExerciseData = await fetchData(`${API_ONE}/exercises/equipment/${exerciseDetail.equipment}`, apiOptions)
         setEquipmentExercise(equipmentExerciseData)
-    }
+    }, [id])
 
     const { bodyPart, gifUrl, name, target, equipment, instructions } = idDetails;
 
     useEffect(() => {
         fetchExerciseDetail();
-    },[id])
+    }, [fetchExerciseDetail])
 
     const extras = [
         {

@@ -6,10 +6,13 @@
     margin-top: 30px;
 }
 
-.bodypart a {
+.bodypart button {
     width: 60px;
     height: 60px;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .bodypart p {

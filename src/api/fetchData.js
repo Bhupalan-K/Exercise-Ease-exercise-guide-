@@ -1,10 +1,10 @@
 export const apiOptions = {
-  method: 'GET',
+  method: 'GET',   
   headers: {
-    'x-rapidapi-key': '18c2f992fdmsh8b233e4a905b01fp1ac81ajsnbaec211f2d93',
+    'x-rapidapi-key': '764c73dd0bmshbac528158ccccddp1744ebjsn37075bd86000',
     'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
   }
-
+  
 };
 export const youtubeOptions = {
   method: 'GET',

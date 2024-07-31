@@ -59,6 +59,7 @@
     border-radius: 3px;
     border: none;
     outline: none;
+    display: flex;
 }
 
 .data .result {
